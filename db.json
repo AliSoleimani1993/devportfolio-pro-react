@@ -1,0 +1,124 @@
+{
+  "devices": [
+    {
+      "id": 1,
+      "name": "Main Server",
+      "type": "Server",
+      "ipAddress": "192.168.1.10",
+      "status": "online",
+      "uptime": "45 days",
+      "cpuUsage": 32,
+      "memoryUsage": 56,
+      "diskUsage": 78,
+      "location": "Data Center A",
+      "lastMaintenance": "2026-08-20",
+      "department": "Engineering"
+    },
+    {
+      "id": 2,
+      "name": "Development Server",
+      "type": "Server",
+      "ipAddress": "192.168.1.20",
+      "status": "online",
+      "uptime": "12 days",
+      "cpuUsage": 45,
+      "memoryUsage": 72,
+      "diskUsage": 45,
+      "location": "Data Center B",
+      "lastMaintenance": "2026-08-22",
+      "department": "Development"
+    },
+    {
+      "id": 3,
+      "name": "Database Server",
+      "type": "Server",
+      "ipAddress": "192.168.1.30",
+      "status": "online",
+      "uptime": "89 days",
+      "cpuUsage": 28,
+      "memoryUsage": 84,
+      "diskUsage": 92,
+      "location": "Data Center A",
+      "lastMaintenance": "2026-08-15",
+      "department": "IT"
+    },
+    {
+      "id": 4,
+      "name": "Network Switch 01",
+      "type": "Network Device",
+      "ipAddress": "192.168.1.1",
+      "status": "online",
+      "uptime": "120 days",
+      "cpuUsage": 15,
+      "memoryUsage": 30,
+      "diskUsage": 10,
+      "location": "Server Room",
+      "lastMaintenance": "2026-08-10",
+      "department": "Network"
+    },
+    {
+      "id": 5,
+      "name": "Workstation - John",
+      "type": "Workstation",
+      "ipAddress": "192.168.1.50",
+      "status": "offline",
+      "uptime": "0 days",
+      "cpuUsage": 0,
+      "memoryUsage": 0,
+      "diskUsage": 0,
+      "location": "Office Floor 2",
+      "lastMaintenance": "2026-08-05",
+      "department": "Sales"
+    },
+    {
+      "id": 6,
+      "name": "WiFi Access Point 1",
+      "type": "Network Device",
+      "ipAddress": "192.168.1.100",
+      "status": "online",
+      "uptime": "60 days",
+      "cpuUsage": 8,
+      "memoryUsage": 20,
+      "diskUsage": 5,
+      "location": "Office Floor 1",
+      "lastMaintenance": "2026-08-18",
+      "department": "IT"
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1,
+      "title": "WiFi not working in conference room",
+      "status": "open",
+      "priority": "high",
+      "assignedTo": "IT Support",
+      "createdAt": "2026-08-24T10:30:00Z",
+      "description": "Unable to connect to WiFi in room 201"
+    },
+    {
+      "id": 2,
+      "title": "Need new laptop for new hire",
+      "status": "in-progress",
+      "priority": "medium",
+      "assignedTo": "Hardware Team",
+      "createdAt": "2026-08-23T14:20:00Z",
+      "description": "New developer starting next week needs a MacBook Pro"
+    }
+  ],
+  "alerts": [
+    {
+      "id": 1,
+      "type": "warning",
+      "message": "Database server disk usage at 92%",
+      "timestamp": "2026-08-24T08:15:00Z",
+      "acknowledged": false
+    },
+    {
+      "id": 2,
+      "type": "info",
+      "message": "Maintenance scheduled for Aug 25, 2:00 AM",
+      "timestamp": "2026-08-23T16:00:00Z",
+      "acknowledged": true
+    }
+  ]
+}

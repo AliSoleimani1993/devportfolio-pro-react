@@ -22,8 +22,6 @@ function Developers() {
     // ... more developers
   ]);
 
-  const [selectedDev, setSelectedDev] = useState(null);
-
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
   };

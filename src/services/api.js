@@ -298,7 +298,7 @@ export const deleteTicket = async (id) => {
 
 export const uploadImage = async (file) => {
 
-  const formData = new formData();
+  const formData = new FormData();
 
   formData.append('image', file);
 
@@ -311,7 +311,7 @@ export const uploadImage = async (file) => {
     body: formData
   });
 
-  if (!response.pk) {
+  if (!response.ok) {
     const error = await response.json();
     throw new Error(error.message || 'upload failed');
   }
